@@ -1,6 +1,6 @@
 %% ELEN 100L (Electric Circuits II): Project 2, Your Name
 %
-% <<ELEN100L_Project_2_figure_01_your_name_winter2015.png>>
+% <<ELEN100L_Project_2_figure_01_ShaneBuck_ThomasHeckman_winter2015.png>>
 %
 % *Hard Copy Deliverables:*
 %
@@ -87,7 +87,7 @@ plot_bottom_6 = 0;   plot_top_6   = VG+0.2;     % y-axis range (volts)
 
 %% Problem 2
 %
-% <<ELEN100L_Project_2_figure_02_your_name_winter2015.png>>
+% <<ELEN100L_Project_2_figure_02_ShaneBuck_ThomasHeckman_winter2015.png>>
 %
 
 fignum = fignum+1;
@@ -179,7 +179,7 @@ fprintf('     t p.u. = %+11.4e seconds.\n', t2_pk_undershoot_ideal_2);
 
 %% Problem 3
 %
-% <<ELEN100L_Project_2_figure_03_your_name_winter2015.png>>
+% <<ELEN100L_Project_2_figure_03_ShaneBuck_ThomasHeckman_winter2015.png>>
 %
 
 fignum = fignum+1;
@@ -187,7 +187,7 @@ fignum = fignum+1;
 %%
 % The LTSpice schematic for the circuit is shown below.
 %
-% <<ELEN100L_Project_2_figure_04_your_name_winter2015.png>>
+% <<ELEN100L_Project_2_figure_04_ShaneBuck_ThomasHeckman_winter2015.png>>
 %
 
 fignum = fignum+1;
@@ -195,7 +195,7 @@ fignum = fignum+1;
 %%
 % The LTSpice voltage source setup for the circuit is shown below.
 %
-% <<ELEN100L_Project_2_figure_05_your_name_winter2015.png>>
+% <<ELEN100L_Project_2_figure_05_ShaneBuck_ThomasHeckman_winter2015.png>>
 %
 
 fignum = fignum+1;
@@ -203,7 +203,7 @@ fignum = fignum+1;
 %%
 % The LTSpice model transient analysis simulation setup is shown below.
 %
-% <<ELEN100L_Project_2_figure_06_your_name_winter2015.png>>
+% <<ELEN100L_Project_2_figure_06_ShaneBuck_ThomasHeckman_winter2015.png>>
 %
 
 fignum = fignum+1;
@@ -211,18 +211,18 @@ fignum = fignum+1;
 %%
 % The LTSpice model for the simulation result is shown below.
 %
-% <<ELEN100L_Project_2_figure_07_your_name_winter2015.png>>
+% <<ELEN100L_Project_2_figure_07_ShaneBuck_ThomasHeckman_winter2015.png>>
 %
 
 fignum = fignum+1;
 
 % Capture peak overshoot and undershoot voltages from the LTSpice plot.
-ltspice_v5_pk_overshoot_ideal_2  =  ? ;
-ltspice_v5_pk_undershoot_ideal_2 =  ? ;
+ltspice_v5_pk_overshoot_ideal_2  =  1.5268;
+ltspice_v5_pk_undershoot_ideal_2 =  0.7225;
 
 % Capture peak overshoot and undershoot time stamps from the LTSpice plot.
-ltspice_t2_pk_overshoot_ideal_2  =  ? ;
-ltspice_t2_pk_undershoot_ideal_2 =  ? ;
+ltspice_t2_pk_overshoot_ideal_2  =  722*10^-6;
+ltspice_t2_pk_undershoot_ideal_2 =  1.039*10^-3;
 
 %%
 % Display the LTSpice peak overshoot and undershoot values for the Ideal
@@ -251,7 +251,6 @@ diff_ideal_v5_pk_overshoot_2  = ...
 diff_ideal_v5_pk_undershoot_2 = ...
     (ltspice_v5_pk_undershoot_ideal_2 - v5_pk_undershoot_ideal_2) ...
     /abs(v5_pk_undershoot_ideal_2)*100;
-
 diff_ideal_t2_pk_overshoot_2  = ...
     (ltspice_t2_pk_overshoot_ideal_2 - t2_pk_overshoot_ideal_2) ...
     /abs(t2_pk_overshoot_ideal_2)*100;
@@ -271,26 +270,26 @@ fprintf('        %% diff = %+8.4f (%%).\n', ...
 fprintf('    MATLAB  V5 p.u. = %+11.4f Volts.\n', ...
             v5_pk_undershoot_ideal_2);
 fprintf('    LTSpice V5 p.u. = %+11.4f Volts.\n', ...
-            ltspice_v5_undershoot_ideal_2);
+            ltspice_v5_pk_undershoot_ideal_2);
 fprintf('        %% diff = %+8.4f (%%).\n', ...
-            diff_ideal_v5_pk_undershoot_ideal_2);
+            diff_ideal_v5_pk_undershoot_2);
 
 fprintf('    MATLAB   t p.o. = %+11.4e seconds.\n', ...
             t2_pk_overshoot_ideal_2);
 fprintf('    LTSpice  t p.o. = %+11.4e seconds.\n', ...
             ltspice_t2_pk_overshoot_ideal_2);
 fprintf('        %% diff = %+8.4f (%%).\n', ...
-            diff_ideal_t2_pk_overshoot_ideal_2);
+            diff_ideal_t2_pk_overshoot_2);
 fprintf('    MATLAB   t p.u. = %+11.4e seconds.\n', ...
             t2_pk_undershoot_ideal_2);
 fprintf('    LTSpice  t p.u. = %+11.4e seconds.\n', ...
             ltspice_t2_pk_undershoot_ideal_2);
 fprintf('        %% diff = %+8.4f (%%).\n', ...
-            diff_ideal_t2_pk_undershoot_ideal_2);
+            diff_ideal_t2_pk_undershoot_2);
      
 %% Problem 6
 %
-% <<ELEN100L_Project_2_figure_08_your_name_winter2015.png>>
+% <<ELEN100L_Project_2_figure_08_ShaneBuck_ThomasHeckman_winter2015.png>>
 %
 
 fignum = fignum+1;
@@ -384,7 +383,7 @@ fprintf('     t p.u. = %+11.4e seconds.\n', t6_pk_undershoot_ideal_6);
 %%
 % The LTSpice schematic for the circuit is shown below.
 %
-% <<ELEN100L_Project_2_figure_10_your_name_winter2015.png>>
+% <<ELEN100L_Project_2_figure_10_ShaneBuck_ThomasHeckman_winter2015.png>>
 %
 
 fignum = fignum+1;
@@ -392,7 +391,7 @@ fignum = fignum+1;
 %%
 % The LTSpice voltage source setup for the circuit is shown below.
 %
-% <<ELEN100L_Project_2_figure_11_your_name_winter2015.png>>
+% <<ELEN100L_Project_2_figure_11_ShaneBuck_ThomasHeckman_winter2015.png>>
 %
 
 fignum = fignum+1;
@@ -400,7 +399,7 @@ fignum = fignum+1;
 %%
 % The LTSpice model transient analysis simulation setup is shown below.
 %
-% <<ELEN100L_Project_2_figure_12_your_name_winter2015.png>>
+% <<ELEN100L_Project_2_figure_12_ShaneBuck_ThomasHeckman_winter2015.png>>
 %
 
 fignum = fignum+1;
@@ -408,18 +407,18 @@ fignum = fignum+1;
 %%
 % The LTSpice model for the simulation result is shown below.
 %
-% <<ELEN100L_Project_2_figure_13_your_name_winter2015.png>>
+% <<ELEN100L_Project_2_figure_13_ShaneBuck_ThomasHeckman_winter2015.png>>
 %
 
 fignum = fignum+1;
 
 % Capture peak overshoot and undershoot voltages from the plot.
-ltspice_v5_pk_overshoot_ideal_6  = ? ;
-ltspice_v5_pk_undershoot_ideal_6 = ? ;
+ltspice_v5_pk_overshoot_ideal_6  = 1.0835;
+ltspice_v5_pk_undershoot_ideal_6 = 0.9931;
 
 % Capture peak overshoot and undershoot time stamps from the plot.
-ltspice_t6_pk_overshoot_ideal_6  = ? ;
-ltspice_t6_pk_undershoot_ideal_6 = ? ;
+ltspice_t6_pk_overshoot_ideal_6  = 721.3*10^-6;
+ltspice_t6_pk_undershoot_ideal_6 = 1.033*10^-3;
 
 %%
 % Display the LTSpice peak overshoot and undershoot values for the Ideal
@@ -429,9 +428,9 @@ ltspice_t6_pk_undershoot_ideal_6 = ? ;
 display(' ');
 display('The LTSpice peak overshoot and undershoot values are:');
 fprintf('    V5 p.o. = %+11.4f Volts.\n', ltspice_v5_pk_overshoot_ideal_6);
-fprintf('    V5 p.u. = %+11.4f Volts.\n', ltpsice_v5_pk_undershoot_ideal_6);
-fprintf('     t p.o. = %+11.4e seconds.\n', ltspice_t2_pk_overshoot_ideal_6);
-fprintf('     t p.u. = %+11.4e seconds.\n', ltspice_t2_pk_undershoot_ideal_6);
+fprintf('    V5 p.u. = %+11.4f Volts.\n', ltspice_v5_pk_undershoot_ideal_6);
+fprintf('     t p.o. = %+11.4e seconds.\n', ltspice_t6_pk_overshoot_ideal_6);
+fprintf('     t p.u. = %+11.4e seconds.\n', ltspice_t6_pk_undershoot_ideal_6);
 
 
 %%
@@ -481,10 +480,10 @@ fprintf('    LTSpice  t p.u. = %+11.4e seconds.\n', ...
 fprintf('        %% diff = %+8.4f (%%).\n', ...
          diff_ideal_t6_pk_undershoot_6);
 
-%{
+
 %% Problem 7  Template
 %
-% <<ELEN100L_Project_2_figure_14_ldorr_winter2015.png>>
+% <<ELEN100L_Project_2_figure_14_ShaneBuck_ThomasHeckman_winter2015.png>>
 %
 
 fignum = fignum+1;
@@ -558,7 +557,7 @@ fprintf('    %% diff C2   = %+8.4f (%%).\n', diff_C2_meas_2);
 % image in the final report. The Snipping Tool in Windows can be used to
 % capture this image.
 %
-% <<ELEN100L_Project_2_figure_15_ldorr_winter2015.png>>
+% <<ELEN100L_Project_2_figure_15_ShaneBuck_ThomasHeckman_winter2015.png>>
 %
 
 fignum = fignum+1;
@@ -568,7 +567,7 @@ fignum = fignum+1;
 %
 % ........................................................................
 %
-% <<ELEN100L_Project_2_figure_16_ldorr_winter2015.png>>
+% <<ELEN100L_Project_2_figure_16_ShaneBuck_ThomasHeckman_winter2015.png>>
 %
 
 fignum = fignum+1;
@@ -608,7 +607,7 @@ fprintf('    Vin_step = %+11.4f Volts.\n',  Vin_step_meas_2);
 %
 % ........................................................................
 %
-% <<ELEN100L_Project_2_figure_17_ldorr_winter2015.png>>
+% <<ELEN100L_Project_2_figure_17_ShaneBuck_ThomasHeckman_winter2015.png>>
 %
 
 fignum = fignum+1;
@@ -642,7 +641,7 @@ fprintf('    Vout_step = %+11.4f Volts.\n',  Vout_step_meas_2);
 % 
 % ........................................................................
 %
-% <<ELEN100L_Project_2_figure_18_ldorr_winter2015.png>>
+% <<ELEN100L_Project_2_figure_18_ShaneBuck_ThomasHeckman_winter2015.png>>
 %
 
 fignum = fignum+1;
@@ -689,7 +688,7 @@ fprintf('    t p.o.         = %+11.4e seconds.\n', ...
 %
 % ........................................................................
 %
-% <<ELEN100L_Project_2_figure_19_ldorr_winter2015.png>>
+% <<ELEN100L_Project_2_figure_19_ShaneBuck_ThomasHeckman_winter2015.png>>
 %
 
 fignum = fignum+1;
@@ -840,7 +839,7 @@ fprintf('    %% diff C2   = %+8.4f (%%).\n', diff_C2_meas_6);
 %
 % ........................................................................
 %
-% <<ELEN100L_Project_2_figure_20_ldorr_winter2015.png>>
+% <<ELEN100L_Project_2_figure_20_ShaneBuck_ThomasHeckman_winter2015.png>>
 %
 
 fignum = fignum+1;
@@ -850,7 +849,7 @@ fignum = fignum+1;
 %
 % ........................................................................
 %
-% <<ELEN100L_Project_2_figure_21_ldorr_winter2015.png>>
+% <<ELEN100L_Project_2_figure_21_ShaneBuck_ThomasHeckman_winter2015.png>>
 %
 
 fignum = fignum+1;
@@ -879,7 +878,7 @@ fprintf('    Vin_step = %+11.4f Volts.\n',  Vin_step_meas_6);
 %
 % ........................................................................
 %
-% <<ELEN100L_Project_2_figure_22_ldorr_winter2015.png>>
+% <<ELEN100L_Project_2_figure_22_ShaneBuck_ThomasHeckman_winter2015.png>>
 %
 
 fignum = fignum+1;
@@ -913,7 +912,7 @@ fprintf('    Vout_step = %+11.4f Volts.\n',  Vout_step_meas_6);
 %
 % ........................................................................
 %
-% <<ELEN100L_Project_2_figure_23_ldorr_winter2015.png>>
+% <<ELEN100L_Project_2_figure_23_ShaneBuck_ThomasHeckman_winter2015.png>>
 %
 
 fignum = fignum+1;
@@ -950,7 +949,7 @@ fprintf('    t p.o.         = %+11.4e seconds.\n', ...
 %
 % ........................................................................
 %
-% <<ELEN100L_Project_2_figure_24_ldorr_winter2015.png>>
+% <<ELEN100L_Project_2_figure_24_ShaneBuck_ThomasHeckman_winter2015.png>>
 %
 
 fignum = fignum+1;
@@ -1035,4 +1034,4 @@ disp('Program execution complete....');
 
 %% MATLAB code listing
 %
-         %}
+         
