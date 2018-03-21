@@ -1,4 +1,4 @@
-%% ELEN 100L (Electric Circuits II): Project 2, Your Name
+%% ELEN 100L (Electric Circuits II): Project 2, Shane Buck, Thomas Heckman
 %
 % <<ELEN100L_Project_2_figure_01_ShaneBuck_ThomasHeckman_winter2015.png>>
 %
